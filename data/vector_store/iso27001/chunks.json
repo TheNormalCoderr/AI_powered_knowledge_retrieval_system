@@ -1,0 +1,979 @@
+[
+  {
+    "text": "Information security, cybersecurity\nand privacy protection — Information\nsecurity management systems —\nRequirements\nSécurité de l'information, cybersécurité et protection de la vie\nprivée — Systèmes de management de la sécurité de l'information —\nExigences\nINTERNATIONAL\nSTANDARD\nISO/IEC\n27001\nThird edition\n2022-10\nReference number\nISO/IEC 27001:2022(E)\n© ISO/IEC 2022",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 1,
+      "is_toc": false,
+      "is_cover": true,
+      "chunk_id": 0,
+      "clauses": [
+        "27001"
+      ]
+    }
+  },
+  {
+    "text": "ii\nISO/IEC 27001:2022(E)\nCOPYRIGHT PROTECTED DOCUMENT\n© ISO/IEC 2022\nAll rights reserved. Unless otherwise specified, or required in the context of its implementation, no part of this publication may\nbe reproduced or utilized otherwise in any form or by any means, electronic or mechanical, including photocopying, or posting on\nthe internet or an intranet, without prior written permission. Permission can be requested from either ISO at the address below\nor ISO’s member body in the country of the requester.\nISO copyright office\nCP 401 • Ch. de Blandonnet 8\nCH-1214 Vernier, Geneva\nPhone: +41 22 749 01 11\nEmail: copyright@iso.org\nWebsite: www.iso.org\nPublished in Switzerland",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 2,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 1
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\nForeword ... iv\nIntroduction ... v\n1\nScope ... 1\n2\nNormative references ... 1\n3\nTerms and definitions ... 1\n4\nContext of the organization ... 1\n4.1\nUnderstanding the organization and its context ... 1\n4.2\nUnderstanding the needs and expectations of interested parties ... 1\n4.3\nDetermining the scope of the information security management system ... 2\n4.4\nInformation security management system ... 2\n5\nLeadership ... 2\n5.1\nLeadership and commitment ... 2\n5.2\nPolicy ... 3\n5.3\nOrganizational roles, responsibilities and authorities ... 3\n6\nPlanning ... 3\n6.1\nActions to address risks and opportunities ... 3\n6.1.1\nGeneral ... 3\n6.1.2\nInformation security risk assessment ... 4\n6.1.3\nInformation security risk treatment ... 4\n6.2\nInformation security objectives and planning to achieve them ... 5\n7\nSupport ... 6\n7.1\nResources ... 6\n7.2\nCompetence ... 6\n7.3\nAwareness ... 6\n7.4\nCommunication ... 6\n7.5\nDocumented information ... 6\n7.5.1\nGeneral ... 6\n7.5.2",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 3,
+      "is_toc": true,
+      "is_cover": false,
+      "chunk_id": 2,
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "5",
+        "5.1",
+        "5.2",
+        "5.3",
+        "6",
+        "6.1",
+        "6.1.1",
+        "6.1.2",
+        "6.1.3",
+        "6.2",
+        "7",
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.5.1"
+      ]
+    }
+  },
+  {
+    "text": "7\nSupport ... 6\n7.1\nResources ... 6\n7.2\nCompetence ... 6\n7.3\nAwareness ... 6\n7.4\nCommunication ... 6\n7.5\nDocumented information ... 6\n7.5.1\nGeneral ... 6\n7.5.2\nCreating and updating ... 7\n7.5.3\nControl of documented information ... 7\n8\nOperation ... 7\n8.1\nOperational planning and control ... 7\n8.2\nInformation security risk assessment ... 8\n8.3\nInformation security risk treatment ... 8\n9\nPerformance evaluation ... 8\n9.1\nMonitoring, measurement, analysis and evaluation ... 8\n9.2\nInternal audit ... 8\n9.2.1\nGeneral ... 8\n9.2.2\nInternal audit programme ... 9\n9.3\nManagement review ... 9\n9.3.1\nGeneral ... 9\n9.3.2\nManagement review inputs ... 9\n9.3.3\nManagement review results ... 9\n10\nImprovement ... 10\n10.1\nContinual improvement ... 10\n10.2\nNonconformity and corrective action ... 10\nAnnex A (normative) Information security controls reference ... 11\nBibliography ... 19\niii\n© ISO/IEC 2022 – All rights reserved\nContents\nPage",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 3,
+      "is_toc": true,
+      "is_cover": false,
+      "chunk_id": 3,
+      "clauses": [
+        "7",
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.5.1",
+        "7.5.2",
+        "7.5.3",
+        "8",
+        "8.1",
+        "8.2",
+        "8.3",
+        "9",
+        "9.1",
+        "9.2",
+        "9.2.1",
+        "9.2.2",
+        "9.3",
+        "9.3.1",
+        "9.3.2",
+        "9.3.3",
+        "10",
+        "10.1",
+        "10.2"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\nForeword\nISO (the International Organization for Standardization) and IEC (the International Electrotechnical\nCommission) form the specialized system for worldwide standardization. National bodies that are\nmembers of ISO or IEC participate in the development of International Standards through technical\ncommittees established by the respective organization to deal with particular fields of technical\nactivity. ISO and IEC technical committees collaborate in fields of mutual interest. Other international\norganizations, governmental and non-governmental, in liaison with ISO and IEC, also take part in the\nwork.\nThe procedures used to develop this document and those intended for its further maintenance\nare described in the ISO/IEC Directives, Part 1. In particular, the different approval criteria\nneeded for the different types of document should be noted. This document was drafted in",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 4,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 4
+    }
+  },
+  {
+    "text": "needed for the different types of document should be noted. This document was drafted in\naccordance with the editorial rules of the ISO/IEC Directives, Part 2 (see www.iso.org/directives or\nwww.iec.ch/members_experts/refdocs).\nAttention is drawn to the possibility that some of the elements of this document may be the subject\nof patent rights. ISO and IEC shall not be held responsible for identifying any or all such patent\nrights. Details of any patent rights identified during the development of the document will be in the\nIntroduction and/or on the ISO list of patent declarations received (see www.iso.org/patents) or the IEC\nlist of patent declarations received (see https://patents.iec.ch).\nAny trade name used in this document is information given for the convenience of users and does not\nconstitute an endorsement.\nFor an explanation of the voluntary nature of standards, the meaning of ISO specific terms and",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 4,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 5
+    }
+  },
+  {
+    "text": "constitute an endorsement.\nFor an explanation of the voluntary nature of standards, the meaning of ISO specific terms and\nexpressions related to conformity assessment, as well as information about ISO's adherence to\nthe World Trade Organization (WTO) principles in the Technical Barriers to Trade (TBT) see\nwww.iso.org/iso/foreword.html. In the IEC, see www.iec.ch/understanding-standards.\nThis document was prepared by Joint Technical Committee ISO/IEC JTC 1, Information Technology,\nSubcommittee SC 27, Information security, cybersecurity and privacy protection.\nThis third edition cancels and replaces the second edition (ISO/IEC 27001:2013), which has been\ntechnically revised. It also incorporates the Technical Corrigenda ISO/IEC 27001:2013/Cor 1:2014 and\nISO/IEC 27001:2013/Cor 2:2015.\nThe main changes are as follows:\n—\nthe text has been aligned with the harmonized structure for management system standards\nand ISO/IEC 27002:2022.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 4,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 6
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2013/Cor 2:2015.\nThe main changes are as follows:\n—\nthe text has been aligned with the harmonized structure for management system standards\nand ISO/IEC 27002:2022.\nAny feedback or questions on this document should be directed to the user’s national standards\nbody. A complete listing of these bodies can be found at www.iso.org/members.html and\nwww.iec.ch/national-committees.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 4,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 7
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\nIntroduction\n0.1 General\nThis document has been prepared to provide requirements for establishing, implementing, maintaining\nand continually improving an information security management system. The adoption of an\ninformation security management system is a strategic decision for an organization. The establishment\nand implementation of an organization’s information security management system is influenced by the\norganization’s needs and objectives, security requirements, the organizational processes used and the\nsize and structure of the organization. All of these influencing factors are expected to change over time.\nThe information security management system preserves the confidentiality, integrity and availability\nof information by applying a risk management process and gives confidence to interested parties that\nrisks are adequately managed.\nIt is important that the information security management system is part of and integrated with the",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 5,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 8,
+      "clauses": [
+        "0.1"
+      ]
+    }
+  },
+  {
+    "text": "risks are adequately managed.\nIt is important that the information security management system is part of and integrated with the\norganization’s processes and overall management structure and that information security is considered\nin the design of processes, information systems, and controls. It is expected that an information security\nmanagement system implementation will be scaled in accordance with the needs of the organization.\nThis document can be used by internal and external parties to assess the organization's ability to meet\nthe organization’s own information security requirements.\nThe order in which requirements are presented in this document does not reflect their importance\nor imply the order in which they are to be implemented. The list items are enumerated for reference\npurpose only.\nISO/IEC 27000 describes the overview and the vocabulary of information security management\nsystems, referencing the information security management system family of standards (including",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 5,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 9
+    }
+  },
+  {
+    "text": "systems, referencing the information security management system family of standards (including\nISO/IEC 27003[2], ISO/IEC 27004[3] and ISO/IEC 27005[4]), with related terms and definitions.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 5,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 10
+    }
+  },
+  {
+    "text": "0.2 Compatibility with other management system standards\nThis document applies the high-level structure, identical sub-clause titles, identical text, common terms,\nand core definitions defined in Annex SL of ISO/IEC Directives, Part 1, Consolidated ISO Supplement,\nand therefore maintains compatibility with other management system standards that have adopted the\nAnnex SL.\nThis common approach defined in the Annex SL will be useful for those organizations that choose to\noperate a single management system that meets the requirements of two or more management system\nstandards.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 5,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 11,
+      "clauses": [
+        "0.2"
+      ]
+    }
+  },
+  {
+    "text": "INTERNATIONAL STANDARD\nISO/IEC 27001:2022(E)\nInformation security, cybersecurity and privacy\nprotection — Information security management systems\n— Requirements\n1 Scope\nThis document specifies the requirements for establishing, implementing, maintaining and continually\nimproving an information security management system within the context of the organization. This\ndocument also includes requirements for the assessment and treatment of information security risks\ntailored to the needs of the organization. The requirements set out in this document are generic and are\nintended to be applicable to all organizations, regardless of type, size or nature. Excluding any of the\nrequirements specified in Clauses 4 to 10 is not acceptable when an organization claims conformity to\nthis document.\n2 Normative references\nThe following documents are referred to in the text in such a way that some or all of their content",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 7,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 12,
+      "clauses": [
+        "1",
+        "2"
+      ]
+    }
+  },
+  {
+    "text": "this document.\n2 Normative references\nThe following documents are referred to in the text in such a way that some or all of their content\nconstitutes requirements of this document. For dated references, only the edition cited applies. For\nundated references, the latest edition of the referenced document (including any amendments) applies.\nISO/IEC 27000, Information technology — Security techniques — Information security management\nsystems — Overview and vocabulary\n3 Terms and definitions\nFor the purposes of this document, the terms and definitions given in ISO/IEC 27000 apply.\nISO and IEC maintain terminology databases for use in standardization at the following addresses:\n— ISO Online browsing platform: available at https://www.iso.org/obp\n— IEC Electropedia: available at https://www.electropedia.org/\n4 Context of the organization\n4.1 Understanding the organization and its context\nThe organization shall determine external and internal issues that are relevant to its purpose and that",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 7,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 13,
+      "clauses": [
+        "2",
+        "3",
+        "4",
+        "4.1"
+      ]
+    }
+  },
+  {
+    "text": "4.1 Understanding the organization and its context\nThe organization shall determine external and internal issues that are relevant to its purpose and that\naffect its ability to achieve the intended outcome(s) of its information security management system.\nNOTE\nDetermining these issues refers to establishing the external and internal context of the organization\nconsidered in Clause 5.4.1 of ISO 31000:2018[5].\n4.2 Understanding the needs and expectations of interested parties\nThe organization shall determine:\na) interested parties that are relevant to the information security management system;\nb) the relevant requirements of these interested parties;\nc)\nwhich of these requirements will be addressed through the information security management\nsystem.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 7,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 14,
+      "clauses": [
+        "4.1",
+        "4.2"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\nNOTE\nThe requirements of interested parties can include legal and regulatory requirements and contractual\nobligations.\n4.3 Determining the scope of the information security management system\nThe organization shall determine the boundaries and applicability of the information security\nmanagement system to establish its scope.\nWhen determining this scope, the organization shall consider:\na) the external and internal issues referred to in 4.1;\nb) the requirements referred to in 4.2;\nc)\ninterfaces and dependencies between activities performed by the organization, and those that are\nperformed by other organizations.\nThe scope shall be available as documented information.\n4.4 Information security management system\nThe organization shall establish, implement, maintain and continually improve an information security\nmanagement system, including the processes needed and their interactions, in accordance with the\nrequirements of this document.\n5 Leadership",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 8,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 15,
+      "clauses": [
+        "4.3",
+        "4.4",
+        "5"
+      ]
+    }
+  },
+  {
+    "text": "management system, including the processes needed and their interactions, in accordance with the\nrequirements of this document.\n5 Leadership\n5.1 Leadership and commitment\nTop management shall demonstrate leadership and commitment with respect to the information\nsecurity management system by:\na) ensuring the information security policy and the information security objectives are established\nand are compatible with the strategic direction of the organization;\nb) ensuring the integration of the information security management system requirements into the\norganization’s processes;\nc)\nensuring that the resources needed for the information security management system are available;\nd) communicating the importance of effective information security management and of conforming\nto the information security management system requirements;\ne) ensuring that the information security management system achieves its intended outcome(s);\nf)",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 8,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 16,
+      "clauses": [
+        "5",
+        "5.1"
+      ]
+    }
+  },
+  {
+    "text": "to the information security management system requirements;\ne) ensuring that the information security management system achieves its intended outcome(s);\nf)\ndirecting and supporting persons to contribute to the effectiveness of the information security\nmanagement system;\ng) promoting continual improvement; and\nh) supporting other relevant management roles to demonstrate their leadership as it applies to their\nareas of responsibility.\nNOTE\nReference to “business” in this document can be interpreted broadly to mean those activities that are\ncore to the purposes of the organization’s existence.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 8,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 17
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\n5.2 Policy\nTop management shall establish an information security policy that:\na) is appropriate to the purpose of the organization;\nb) includes information security objectives (see 6.2) or provides the framework for setting information\nsecurity objectives;\nc)\nincludes a commitment to satisfy applicable requirements related to information security;\nd) includes a commitment to continual improvement of the information security management system.\nThe information security policy shall:\ne) be available as documented information;\nf)\nbe communicated within the organization;\ng) be available to interested parties, as appropriate.\n5.3 Organizational roles, responsibilities and authorities\nTop management shall ensure that the responsibilities and authorities for roles relevant to information\nsecurity are assigned and communicated within the organization.\nTop management shall assign the responsibility and authority for:",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 9,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 18,
+      "clauses": [
+        "5.2",
+        "5.3"
+      ]
+    }
+  },
+  {
+    "text": "security are assigned and communicated within the organization.\nTop management shall assign the responsibility and authority for:\na) ensuring that the information security management system conforms to the requirements of this\ndocument;\nb) reporting on the performance of the information security management system to top management.\nNOTE\nTop management can also assign responsibilities and authorities for reporting performance of the\ninformation security management system within the organization.\n6 Planning\n6.1 Actions to address risks and opportunities\n6.1.1\nGeneral\nWhen planning for the information security management system, the organization shall consider\nthe issues referred to in 4.1 and the requirements referred to in 4.2 and determine the risks and\nopportunities that need to be addressed to:\na) ensure the information security management system can achieve its intended outcome(s);\nb) prevent, or reduce, undesired effects;\nc)\nachieve continual improvement.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 9,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 19,
+      "clauses": [
+        "6",
+        "6.1",
+        "6.1.1"
+      ]
+    }
+  },
+  {
+    "text": "a) ensure the information security management system can achieve its intended outcome(s);\nb) prevent, or reduce, undesired effects;\nc)\nachieve continual improvement.\nThe organization shall plan:\nd) actions to address these risks and opportunities; and\ne) how to\n1) integrate and implement the actions into its information security management system\nprocesses; and\n2) evaluate the effectiveness of these actions.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 9,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 20
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\n6.1.2\nInformation security risk assessment\nThe organization shall define and apply an information security risk assessment process that:\na) establishes and maintains information security risk criteria that include:\n1) the risk acceptance criteria; and\n2) criteria for performing information security risk assessments;\nb) ensures that repeated information security risk assessments produce consistent, valid and\ncomparable results;\nc)\nidentifies the information security risks:\n1) apply the information security risk assessment process to identify risks associated with\nthe loss of confidentiality, integrity and availability for information within the scope of the\ninformation security management system; and\n2) identify the risk owners;\nd) analyses the information security risks:\n1) assess the potential consequences that would result if the risks identified in 6.1.2 c) 1) were to\nmaterialize;",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 10,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 21,
+      "clauses": [
+        "6.1.2"
+      ]
+    }
+  },
+  {
+    "text": "d) analyses the information security risks:\n1) assess the potential consequences that would result if the risks identified in 6.1.2 c) 1) were to\nmaterialize;\n2) assess the realistic likelihood of the occurrence of the risks identified in 6.1.2 c) 1); and\n3) determine the levels of risk;\ne) evaluates the information security risks:\n1) compare the results of risk analysis with the risk criteria established in 6.1.2 a); and\n2) prioritize the analysed risks for risk treatment.\nThe organization shall retain documented information about the information security risk assessment\nprocess.\n6.1.3\nInformation security risk treatment\nThe organization shall define and apply an information security risk treatment process to:\na) select appropriate information security risk treatment options, taking account of the risk\nassessment results;\nb) determine all controls that are necessary to implement the information security risk treatment\noption(s) chosen;\nNOTE 1",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 10,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 22,
+      "clauses": [
+        "6.1.3"
+      ]
+    }
+  },
+  {
+    "text": "assessment results;\nb) determine all controls that are necessary to implement the information security risk treatment\noption(s) chosen;\nNOTE 1\nOrganizations can design controls as required, or identify them from any source.\nc)\ncompare the controls determined in 6.1.3 b) above with those in Annex A and verify that no\nnecessary controls have been omitted;\nNOTE 2\nAnnex A contains a list of possible information security controls. Users of this document are\ndirected to Annex A to ensure that no necessary information security controls are overlooked.\nNOTE 3\nThe information security controls listed in Annex A are not exhaustive and additional information\nsecurity controls can be included if needed.\nd) produce a Statement of Applicability that contains:\n— the necessary controls (see 6.1.3 b) and c));",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 10,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 23
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\n— justification for their inclusion;\n— whether the necessary controls are implemented or not; and\n— the justification for excluding any of the Annex A controls.\ne) formulate an information security risk treatment plan; and\nf)\nobtain risk owners’ approval of the information security risk treatment plan and acceptance of the\nresidual information security risks.\nThe organization shall retain documented information about the information security risk treatment\nprocess.\nNOTE 4\nThe information security risk assessment and treatment process in this document aligns with the\nprinciples and generic guidelines provided in ISO 31000[5].\n6.2 Information security objectives and planning to achieve them\nThe organization shall establish information security objectives at relevant functions and levels.\nThe information security objectives shall:\na) be consistent with the information security policy;\nb) be measurable (if practicable);\nc)",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 11,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 24,
+      "clauses": [
+        "6.2"
+      ]
+    }
+  },
+  {
+    "text": "The information security objectives shall:\na) be consistent with the information security policy;\nb) be measurable (if practicable);\nc)\ntake into account applicable information security requirements, and results from risk assessment\nand risk treatment;\nd) be monitored;\ne) be communicated;\nf)\nbe updated as appropriate;\ng) be available as documented information.\nThe organization shall retain documented information on the information security objectives.\nWhen planning how to achieve its information security objectives, the organization shall determine:\nh) what will be done;\ni)\nwhat resources will be required;\nj)\nwho will be responsible;\nk) when it will be completed; and\nl)\nhow the results will be evaluated.\n6.3\nPlanning of changes\nWhen the organization determines the need for changes to the information security management\nsystem, the changes shall be carried out in a planned manner.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 11,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 25,
+      "clauses": [
+        "6.3"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\n7 Support\n7.1 Resources\nThe organization shall determine and provide the resources needed for the establishment,\nimplementation, maintenance and continual improvement of the information security management\nsystem.\n7.2 Competence\nThe organization shall:\na) determine the necessary competence of person(s) doing work under its control that affects its\ninformation security performance;\nb) ensure that these persons are competent on the basis of appropriate education, training, or\nexperience;\nc)\nwhere applicable, take actions to acquire the necessary competence, and evaluate the effectiveness\nof the actions taken; and\nd) retain appropriate documented information as evidence of competence.\nNOTE\nApplicable actions can include, for example: the provision of training to, the mentoring of, or the reassignment of current employees; or the hiring or contracting of competent persons.\n7.3 Awareness\nPersons doing work under the organization’s control shall be aware of:",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 12,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 26,
+      "clauses": [
+        "7",
+        "7.1",
+        "7.2",
+        "7.3"
+      ]
+    }
+  },
+  {
+    "text": "7.3 Awareness\nPersons doing work under the organization’s control shall be aware of:\na) the information security policy;\nb) their contribution to the effectiveness of the information security management system, including\nthe benefits of improved information security performance; and\nc)\nthe implications of not conforming with the information security management system\nrequirements.\n7.4 Communication\nThe organization shall determine the need for internal and external communications relevant to the\ninformation security management system including:\na) on what to communicate;\nb) when to communicate;\nc)\nwith whom to communicate;\nd) how to communicate.\n7.5 Documented information\n7.5.1\nGeneral\nThe organization’s information security management system shall include:\na) documented information required by this document; and",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 12,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 27,
+      "clauses": [
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.5.1"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\nb) documented information determined by the organization as being necessary for the effectiveness\nof the information security management system.\nNOTE\nThe extent of documented information for an information security management system can differ\nfrom one organization to another due to:\n1)\nthe size of organization and its type of activities, processes, products and services;\n2)\nthe complexity of processes and their interactions; and\n3)\nthe competence of persons.\n7.5.2\nCreating and updating\nWhen creating and updating documented information the organization shall ensure appropriate:\na) identification and description (e.g. a title, date, author, or reference number);\nb) format (e.g. language, software version, graphics) and media (e.g. paper, electronic); and\nc)\nreview and approval for suitability and adequacy.\n7.5.3\nControl of documented information\nDocumented information required by the information security management system and by this",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 13,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 28,
+      "clauses": [
+        "7.5.2",
+        "7.5.3"
+      ]
+    }
+  },
+  {
+    "text": "review and approval for suitability and adequacy.\n7.5.3\nControl of documented information\nDocumented information required by the information security management system and by this\ndocument shall be controlled to ensure:\na) it is available and suitable for use, where and when it is needed; and\nb) it is adequately protected (e.g. from loss of confidentiality, improper use, or loss of integrity).\nFor the control of documented information, the organization shall address the following activities, as\napplicable:\nc)\ndistribution, access, retrieval and use;\nd) storage and preservation, including the preservation of legibility;\ne) control of changes (e.g. version control); and\nf)\nretention and disposition.\nDocumented information of external origin, determined by the organization to be necessary for\nthe planning and operation of the information security management system, shall be identified as\nappropriate, and controlled.\nNOTE",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 13,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 29,
+      "clauses": [
+        "7.5.3"
+      ]
+    }
+  },
+  {
+    "text": "the planning and operation of the information security management system, shall be identified as\nappropriate, and controlled.\nNOTE\nAccess can imply a decision regarding the permission to view the documented information only, or\nthe permission and authority to view and change the documented information, etc.\n8 Operation\n8.1 Operational planning and control\nThe organization shall plan, implement and control the processes needed to meet requirements, and to\nimplement the actions determined in Clause 6, by:\n— establishing criteria for the processes;\n— implementing control of the processes in accordance with the criteria.\nDocumented information shall be available to the extent necessary to have confidence that the\nprocesses have been carried out as planned.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 13,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 30,
+      "clauses": [
+        "8",
+        "8.1"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\nThe organization shall control planned changes and review the consequences of unintended changes,\ntaking action to mitigate any adverse effects, as necessary.\nThe organization shall ensure that externally provided processes, products or services that are relevant\nto the information security management system are controlled.\n8.2 Information security risk assessment\nThe organization shall perform information security risk assessments at planned intervals or when\nsignificant changes are proposed or occur, taking account of the criteria established in 6.1.2 a).\nThe organization shall retain documented information of the results of the information security risk\nassessments.\n8.3 Information security risk treatment\nThe organization shall implement the information security risk treatment plan.\nThe organization shall retain documented information of the results of the information security risk\ntreatment.\n9 Performance evaluation",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 14,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 31,
+      "clauses": [
+        "8.2",
+        "8.3",
+        "9"
+      ]
+    }
+  },
+  {
+    "text": "The organization shall retain documented information of the results of the information security risk\ntreatment.\n9 Performance evaluation\n9.1 Monitoring, measurement, analysis and evaluation\nThe organization shall determine:\na) what needs to be monitored and measured, including information security processes and controls;\nb) the methods for monitoring, measurement, analysis and evaluation, as applicable, to ensure\nvalid results. The methods selected should produce comparable and reproducible results to be\nconsidered valid;\nc)\nwhen the monitoring and measuring shall be performed;\nd) who shall monitor and measure;\ne) when the results from monitoring and measurement shall be analysed and evaluated;\nf)\nwho shall analyse and evaluate these results.\nDocumented information shall be available as evidence of the results.\nThe organization shall evaluate the information security performance and the effectiveness of the\ninformation security management system.\n9.2 Internal audit\n9.2.1\nGeneral",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 14,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 32,
+      "clauses": [
+        "9",
+        "9.1",
+        "9.2",
+        "9.2.1"
+      ]
+    }
+  },
+  {
+    "text": "The organization shall evaluate the information security performance and the effectiveness of the\ninformation security management system.\n9.2 Internal audit\n9.2.1\nGeneral\nThe organization shall conduct internal audits at planned intervals to provide information on whether\nthe information security management system:\na) conforms to\n1) the organization’s own requirements for its information security management system;",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 14,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 33,
+      "clauses": [
+        "9.2",
+        "9.2.1"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\n2) the requirements of this document;\nb) is effectively implemented and maintained.\n9.2.2\nInternal audit programme\nThe organization shall plan, establish, implement and maintain an audit programme(s), including the\nfrequency, methods, responsibilities, planning requirements and reporting.\nWhen establishing the internal audit programme(s), the organization shall consider the importance of\nthe processes concerned and the results of previous audits.\nThe organization shall:\na) define the audit criteria and scope for each audit;\nb) select auditors and conduct audits that ensure objectivity and the impartiality of the audit process;\nc)\nensure that the results of the audits are reported to relevant management;\nDocumented information shall be available as evidence of the implementation of the audit programme(s)\nand the audit results.\n9.3 Management review\n9.3.1\nGeneral\nTop management shall review the organization's information security management system at planned",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 15,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 34,
+      "clauses": [
+        "9.2.2",
+        "9.3",
+        "9.3.1"
+      ]
+    }
+  },
+  {
+    "text": "and the audit results.\n9.3 Management review\n9.3.1\nGeneral\nTop management shall review the organization's information security management system at planned\nintervals to ensure its continuing suitability, adequacy and effectiveness.\n9.3.2\nManagement review inputs\nThe management review shall include consideration of:\na) the status of actions from previous management reviews;\nb) changes in external and internal issues that are relevant to the information security management\nsystem;\nc)\nchanges in needs and expectations of interested parties that are relevant to the information\nsecurity management system;\nd) feedback on the information security performance, including trends in:\n1) nonconformities and corrective actions;\n2) monitoring and measurement results;\n3) audit results;\n4) fulfilment of information security objectives;\ne) feedback from interested parties;\nf)\nresults of risk assessment and status of risk treatment plan;\ng) opportunities for continual improvement.\n9.3.3",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 15,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 35,
+      "clauses": [
+        "9.3",
+        "9.3.1",
+        "9.3.2"
+      ]
+    }
+  },
+  {
+    "text": "e) feedback from interested parties;\nf)\nresults of risk assessment and status of risk treatment plan;\ng) opportunities for continual improvement.\n9.3.3\nManagement review results\nThe results of the management review shall include decisions related to continual improvement\nopportunities and any needs for changes to the information security management system.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 15,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 36,
+      "clauses": [
+        "9.3.3"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\nDocumented information shall be available as evidence of the results of management reviews.\n10 Improvement\n10.1 Continual improvement\nThe organization shall continually improve the suitability, adequacy and effectiveness of the information\nsecurity management system.\n10.2 Nonconformity and corrective action\nWhen a nonconformity occurs, the organization shall:\na) react to the nonconformity, and as applicable:\n1) take action to control and correct it;\n2) deal with the consequences;\nb) evaluate the need for action to eliminate the causes of nonconformity, in order that it does not recur\nor occur elsewhere, by:\n1) reviewing the nonconformity;\n2) determining the causes of the nonconformity; and\n3) determining if similar nonconformities exist, or could potentially occur;\nc)\nimplement any action needed;\nd) review the effectiveness of any corrective action taken; and\ne) make changes to the information security management system, if necessary.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 16,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 37,
+      "clauses": [
+        "10",
+        "10.1",
+        "10.2"
+      ]
+    }
+  },
+  {
+    "text": "c)\nimplement any action needed;\nd) review the effectiveness of any corrective action taken; and\ne) make changes to the information security management system, if necessary.\nCorrective actions shall be appropriate to the effects of the nonconformities encountered.\nDocumented information shall be available as evidence of:\nf)\nthe nature of the nonconformities and any subsequent actions taken,\ng) the results of any corrective action.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 16,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 38
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\nAnnex A\n(normative)\nInformation security controls reference\nThe information security controls listed in Table A.1 are directly derived from and aligned with those\nlisted in ISO/IEC 27002:2022[1], Clauses 5 to 8, and shall be used in context with 6.1.3.\nTable A.1 — Information security controls\n5\nOrganizational controls\n5.1\nPolicies for information security\nControl\nInformation security policy and topic-specific policies shall be defined, approved by management, published, communicated to and\nacknowledged by relevant personnel and relevant interested parties,\nand reviewed at planned intervals and if significant changes occur.\n5.2\nInformation security roles and\nresponsibilities\nControl\nInformation security roles and responsibilities shall be defined and\nallocated according to the organization needs.\n5.3\nSegregation of duties\nControl\nConflicting duties and conflicting areas of responsibility shall be segregated.\n5.4\nManagement responsibilities\nControl",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 17,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 39,
+      "clauses": [
+        "5",
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4"
+      ]
+    }
+  },
+  {
+    "text": "5.3\nSegregation of duties\nControl\nConflicting duties and conflicting areas of responsibility shall be segregated.\n5.4\nManagement responsibilities\nControl\nManagement shall require all personnel to apply information security\nin accordance with the established information security policy, topic-specific policies and procedures of the organization.\n5.5\nContact with authorities\nControl\nThe organization shall establish and maintain contact with relevant\nauthorities.\n5.6\nContact with special interest\ngroups\nControl\nThe organization shall establish and maintain contact with special\ninterest groups or other specialist security forums and professional\nassociations.\n5.7\nThreat intelligence\nControl\nInformation relating to information security threats shall be collected\nand analysed to produce threat intelligence.\n5.8\nInformation security in project\nmanagement\nControl\nInformation security shall be integrated into project management.\n5.9\nInventory of information and\nother associated assets\nControl",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 17,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 40,
+      "clauses": [
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9"
+      ]
+    }
+  },
+  {
+    "text": "management\nControl\nInformation security shall be integrated into project management.\n5.9\nInventory of information and\nother associated assets\nControl\nAn inventory of information and other associated assets, including\nowners, shall be developed and maintained.\n5.10\nAcceptable use of information\nand other associated assets\nControl\nRules for the acceptable use and procedures for handling information and\nother associated assets shall be identified, documented and implemented.\n5.11\nReturn of assets\nControl\nPersonnel and other interested parties as appropriate shall return all\nthe organization’s assets in their possession upon change or termination\nof their employment, contract or agreement.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 17,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 41,
+      "clauses": [
+        "5.9",
+        "5.10",
+        "5.11"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\n5.12\nClassification of information\nControl\nInformation shall be classified according to the information security\nneeds of the organization based on confidentiality, integrity, availability\nand relevant interested party requirements.\n5.13\nLabelling of information\nControl\nAn appropriate set of procedures for information labelling shall be\ndeveloped and implemented in accordance with the information classification scheme adopted by the organization.\n5.14\nInformation transfer\nControl\nInformation transfer rules, procedures, or agreements shall be in place\nfor all types of transfer facilities within the organization and between\nthe organization and other parties.\n5.15\nAccess control\nControl\nRules to control physical and logical access to information and other\nassociated assets shall be established and implemented based on business and information security requirements.\n5.16\nIdentity management\nControl\nThe full life cycle of identities shall be managed.\n5.17",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 18,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 42,
+      "clauses": [
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15",
+        "5.16"
+      ]
+    }
+  },
+  {
+    "text": "5.16\nIdentity management\nControl\nThe full life cycle of identities shall be managed.\n5.17\nAuthentication information\nControl\nAllocation and management of authentication information shall be\ncontrolled by a management process, including advising personnel on\nappropriate handling of authentication information.\n5.18\nAccess rights\nControl\nAccess rights to information and other associated assets shall be\nprovisioned, reviewed, modified and removed in accordance with the\norganization’s topic-specific policy on and rules for access control.\n5.19\nInformation security in supplier\nrelationships\nControl\nProcesses and procedures shall be defined and implemented to manage\nthe information security risks associated with the use of supplier’s\nproducts or services.\n5.20\nAddressing information security\nwithin supplier agreements\nControl\nRelevant information security requirements shall be established and\nagreed with each supplier based on the type of supplier relationship.\n5.21",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 18,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 43,
+      "clauses": [
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19",
+        "5.20"
+      ]
+    }
+  },
+  {
+    "text": "within supplier agreements\nControl\nRelevant information security requirements shall be established and\nagreed with each supplier based on the type of supplier relationship.\n5.21\nManaging information security\nin the information and communication technology (ICT) supply\nchain\nControl\nProcesses and procedures shall be defined and implemented to manage\nthe information security risks associated with the ICT products and\nservices supply chain.\n5.22\nMonitoring, review and change\nmanagement of supplier services\nControl\nThe organization shall regularly monitor, review, evaluate and manage\nchange in supplier information security practices and service delivery.\n5.23\nInformation security for use of\ncloud services\nControl\nProcesses for acquisition, use, management and exit from cloud services\nshall be established in accordance with the organization’s information\nsecurity requirements.\n5.24\nInformation security incident\nmanagement planning and preparation\nControl",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 18,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 44,
+      "clauses": [
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24"
+      ]
+    }
+  },
+  {
+    "text": "shall be established in accordance with the organization’s information\nsecurity requirements.\n5.24\nInformation security incident\nmanagement planning and preparation\nControl\nThe organization shall plan and prepare for managing information security incidents by defining, establishing and communicating information\nsecurity incident management processes, roles and responsibilities.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 18,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 45,
+      "clauses": [
+        "5.24"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\n5.25\nAssessment and decision on information security events\nControl\nThe organization shall assess information security events and decide if\nthey are to be categorized as information security incidents.\n5.26\nResponse to information security\nincidents\nControl\nInformation security incidents shall be responded to in accordance with\nthe documented procedures.\n5.27\nLearning from information security incidents\nControl\nKnowledge gained from information security incidents shall be used to\nstrengthen and improve the information security controls.\n5.28\nCollection of evidence\nControl\nThe organization shall establish and implement procedures for the identification, collection, acquisition and preservation of evidence related\nto information security events.\n5.29\nInformation security during\ndisruption\nControl\nThe organization shall plan how to maintain information security at an\nappropriate level during disruption.\n5.30\nICT readiness for business continuity\nControl",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 19,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 46,
+      "clauses": [
+        "5.25",
+        "5.26",
+        "5.27",
+        "5.28",
+        "5.29",
+        "5.30"
+      ]
+    }
+  },
+  {
+    "text": "disruption\nControl\nThe organization shall plan how to maintain information security at an\nappropriate level during disruption.\n5.30\nICT readiness for business continuity\nControl\nICT readiness shall be planned, implemented, maintained and tested\nbased on business continuity objectives and ICT continuity requirements.\n5.31\nLegal, statutory, regulatory and\ncontractual requirements\nControl\nLegal, statutory, regulatory and contractual requirements relevant to\ninformation security and the organization’s approach to meet these\nrequirements shall be identified, documented and kept up to date.\n5.32\nIntellectual property rights\nControl\nThe organization shall implement appropriate procedures to protect\nintellectual property rights.\n5.33\nProtection of records\nControl\nRecords shall be protected from loss, destruction, falsification, unauthorized access and unauthorized release.\n5.34\nPrivacy and protection of personal identifiable information (PII)\nControl",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 19,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 47,
+      "clauses": [
+        "5.30",
+        "5.31",
+        "5.32",
+        "5.33",
+        "5.34"
+      ]
+    }
+  },
+  {
+    "text": "5.34\nPrivacy and protection of personal identifiable information (PII)\nControl\nThe organization shall identify and meet the requirements regarding\nthe preservation of privacy and protection of PII according to applicable\nlaws and regulations and contractual requirements.\n5.35\nIndependent review of information security\nControl\nThe organization’s approach to managing information security and\nits implementation including people, processes and technologies shall\nbe reviewed independently at planned intervals, or when significant\nchanges occur.\n5.36\nCompliance with policies, rules\nand standards for information\nsecurity\nControl\nCompliance with the organization’s information security policy, topic-specific policies, rules and standards shall be regularly reviewed.\n5.37\nDocumented operating procedures\nControl\nOperating procedures for information processing facilities shall be\ndocumented and made available to personnel who need them.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 19,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 48,
+      "clauses": [
+        "5.34",
+        "5.35",
+        "5.36",
+        "5.37"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\n6\nPeople controls\n6.1\nScreening\nControl\nBackground verification checks on all candidates to become personnel\nshall be carried out prior to joining the organization and on an ongoing\nbasis taking into consideration applicable laws, regulations and ethics\nand be proportional to the business requirements, the classification of\nthe information to be accessed and the perceived risks.\n6.2\nTerms and conditions of employment\nControl\nThe employment contractual agreements shall state the personnel’s and\nthe organization’s responsibilities for information security.\n6.3\nInformation security awareness,\neducation and training\nControl\nPersonnel of the organization and relevant interested parties shall receive\nappropriate information security awareness, education and training\nand regular updates of the organization's information security policy,\ntopic-specific policies and procedures, as relevant for their job function.\n6.4\nDisciplinary process\nControl",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 20,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 49,
+      "clauses": [
+        "6",
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4"
+      ]
+    }
+  },
+  {
+    "text": "and regular updates of the organization's information security policy,\ntopic-specific policies and procedures, as relevant for their job function.\n6.4\nDisciplinary process\nControl\nA disciplinary process shall be formalized and communicated to take\nactions against personnel and other relevant interested parties who\nhave committed an information security policy violation.\n6.5\nResponsibilities after termination\nor change of employment\nControl\nInformation security responsibilities and duties that remain valid after\ntermination or change of employment shall be defined, enforced and\ncommunicated to relevant personnel and other interested parties.\n6.6\nConfidentiality or non-disclosure\nagreements\nControl\nConfidentiality or non-disclosure agreements reflecting the organization’s needs for the protection of information shall be identified,\ndocumented, regularly reviewed and signed by personnel and other\nrelevant interested parties.\n6.7\nRemote working\nControl",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 20,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 50,
+      "clauses": [
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7"
+      ]
+    }
+  },
+  {
+    "text": "documented, regularly reviewed and signed by personnel and other\nrelevant interested parties.\n6.7\nRemote working\nControl\nSecurity measures shall be implemented when personnel are working\nremotely to protect information accessed, processed or stored outside\nthe organization’s premises.\n6.8\nInformation security event reporting\nControl\nThe organization shall provide a mechanism for personnel to report\nobserved or suspected information security events through appropriate\nchannels in a timely manner.\n7\nPhysical controls\n7.1\nPhysical security perimeters\nControl\nSecurity perimeters shall be defined and used to protect areas that\ncontain information and other associated assets.\n7.2\nPhysical entry\nControl\nSecure areas shall be protected by appropriate entry controls and\naccess points.\n7.3\nSecuring offices, rooms and facilities\nControl\nPhysical security for offices, rooms and facilities shall be designed and\nimplemented.\n7.4\nPhysical security monitoring\nControl",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 20,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 51,
+      "clauses": [
+        "6.7",
+        "6.8",
+        "7",
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4"
+      ]
+    }
+  },
+  {
+    "text": "7.3\nSecuring offices, rooms and facilities\nControl\nPhysical security for offices, rooms and facilities shall be designed and\nimplemented.\n7.4\nPhysical security monitoring\nControl\nPremises shall be continuously monitored for unauthorized physical\naccess.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 20,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 52,
+      "clauses": [
+        "7.3",
+        "7.4"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\n7.5\nProtecting against physical and\nenvironmental threats\nControl\nProtection against physical and environmental threats, such as natural\ndisasters and other intentional or unintentional physical threats to\ninfrastructure shall be designed and implemented.\n7.6\nWorking in secure areas\nControl\nSecurity measures for working in secure areas shall be designed and\nimplemented.\n7.7\nClear desk and clear screen\nControl\nClear desk rules for papers and removable storage media and clear\nscreen rules for information processing facilities shall be defined and\nappropriately enforced.\n7.8\nEquipment siting and protection Control\nEquipment shall be sited securely and protected.\n7.9\nSecurity of assets off-premises Control\nOff-site assets shall be protected.\n7.10\nStorage media\nControl\nStorage media shall be managed through their life cycle of acquisition,\nuse, transportation and disposal in accordance with the organization’s\nclassification scheme and handling requirements.\n7.11",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 21,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 53,
+      "clauses": [
+        "7.5",
+        "7.6",
+        "7.7",
+        "7.8",
+        "7.9",
+        "7.10"
+      ]
+    }
+  },
+  {
+    "text": "use, transportation and disposal in accordance with the organization’s\nclassification scheme and handling requirements.\n7.11\nSupporting utilities\nControl\nInformation processing facilities shall be protected from power failures\nand other disruptions caused by failures in supporting utilities.\n7.12\nCabling security\nControl\nCables carrying power, data or supporting information services shall\nbe protected from interception, interference or damage.\n7.13\nEquipment maintenance\nControl\nEquipment shall be maintained correctly to ensure availability, integrity\nand confidentiality of information.\n7.14\nSecure disposal or re-use of\nequipment\nControl\nItems of equipment containing storage media shall be verified to ensure that any sensitive data and licensed software has been removed\nor securely overwritten prior to disposal or re-use.\n8\nTechnological controls\n8.1\nUser end point devices\nControl\nInformation stored on, processed by or accessible via user end point\ndevices shall be protected.\n8.2",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 21,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 54,
+      "clauses": [
+        "7.11",
+        "7.12",
+        "7.13",
+        "7.14",
+        "8",
+        "8.1"
+      ]
+    }
+  },
+  {
+    "text": "8\nTechnological controls\n8.1\nUser end point devices\nControl\nInformation stored on, processed by or accessible via user end point\ndevices shall be protected.\n8.2\nPrivileged access rights\nControl\nThe allocation and use of privileged access rights shall be restricted\nand managed.\n8.3\nInformation access restriction\nControl\nAccess to information and other associated assets shall be restricted in\naccordance with the established topic-specific policy on access control.\n8.4\nAccess to source code\nControl\nRead and write access to source code, development tools and software\nlibraries shall be appropriately managed.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 21,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 55,
+      "clauses": [
+        "8",
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\n8.5\nSecure authentication\nControl\nSecure authentication technologies and procedures shall be implemented\nbased on information access restrictions and the topic-specific policy\non access control.\n8.6\nCapacity management\nControl\nThe use of resources shall be monitored and adjusted in line with current\nand expected capacity requirements.\n8.7\nProtection against malware\nControl\nProtection against malware shall be implemented and supported by\nappropriate user awareness.\n8.8\nManagement of technical vulnerabilities\nControl\nInformation about technical vulnerabilities of information systems in\nuse shall be obtained, the organization’s exposure to such vulnerabilities\nshall be evaluated and appropriate measures shall be taken.\n8.9\nConfiguration management\nControl\nConfigurations, including security configurations, of hardware, software,\nservices and networks shall be established, documented, implemented,\nmonitored and reviewed.\n8.10\nInformation deletion\nControl",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 22,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 56,
+      "clauses": [
+        "8.5",
+        "8.6",
+        "8.7",
+        "8.8",
+        "8.9",
+        "8.10"
+      ]
+    }
+  },
+  {
+    "text": "services and networks shall be established, documented, implemented,\nmonitored and reviewed.\n8.10\nInformation deletion\nControl\nInformation stored in information systems, devices or in any other\nstorage media shall be deleted when no longer required.\n8.11\nData masking\nControl\nData masking shall be used in accordance with the organization’s\ntopic-specific policy on access control and other related topic-specific\npolicies, and business requirements, taking applicable legislation into\nconsideration.\n8.12\nData leakage prevention\nControl\nData leakage prevention measures shall be applied to systems, networks and any other devices that process, store or transmit sensitive\ninformation.\n8.13\nInformation backup\nControl\nBackup copies of information, software and systems shall be maintained\nand regularly tested in accordance with the agreed topic-specific policy\non backup.\n8.14\nRedundancy of information processing facilities\nControl",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 22,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 57,
+      "clauses": [
+        "8.10",
+        "8.11",
+        "8.12",
+        "8.13",
+        "8.14"
+      ]
+    }
+  },
+  {
+    "text": "and regularly tested in accordance with the agreed topic-specific policy\non backup.\n8.14\nRedundancy of information processing facilities\nControl\nInformation processing facilities shall be implemented with redundancy\nsufficient to meet availability requirements.\n8.15\nLogging\nControl\nLogs that record activities, exceptions, faults and other relevant events\nshall be produced, stored, protected and analysed.\n8.16\nMonitoring activities\nControl\nNetworks, systems and applications shall be monitored for anomalous\nbehaviour and appropriate actions taken to evaluate potential information security incidents.\n8.17\nClock synchronization\nControl\nThe clocks of information processing systems used by the organization\nshall be synchronized to approved time sources.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 22,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 58,
+      "clauses": [
+        "8.14",
+        "8.15",
+        "8.16",
+        "8.17"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\n8.18\nUse of privileged utility programs Control\nThe use of utility programs that can be capable of overriding system\nand application controls shall be restricted and tightly controlled.\n8.19\nInstallation of software on operational systems\nControl\nProcedures and measures shall be implemented to securely manage\nsoftware installation on operational systems.\n8.20\nNetworks security\nControl\nNetworks and network devices shall be secured, managed and controlled\nto protect information in systems and applications.\n8.21\nSecurity of network services\nControl\nSecurity mechanisms, service levels and service requirements of network\nservices shall be identified, implemented and monitored.\n8.22\nSegregation of networks\nControl\nGroups of information services, users and information systems shall\nbe segregated in the organization’s networks.\n8.23\nWeb filtering\nControl\nAccess to external websites shall be managed to reduce exposure to\nmalicious content.\n8.24\nUse of cryptography\nControl",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 23,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 59,
+      "clauses": [
+        "8.18",
+        "8.19",
+        "8.20",
+        "8.21",
+        "8.22",
+        "8.23",
+        "8.24"
+      ]
+    }
+  },
+  {
+    "text": "8.23\nWeb filtering\nControl\nAccess to external websites shall be managed to reduce exposure to\nmalicious content.\n8.24\nUse of cryptography\nControl\nRules for the effective use of cryptography, including cryptographic key\nmanagement, shall be defined and implemented.\n8.25\nSecure development life cycle\nControl\nRules for the secure development of software and systems shall be\nestablished and applied.\n8.26\nApplication security requirements\nControl\nInformation security requirements shall be identified, specified and\napproved when developing or acquiring applications.\n8.27\nSecure system architecture and\nengineering principles\nControl\nPrinciples for engineering secure systems shall be established, documented, maintained and applied to any information system development\nactivities.\n8.28\nSecure coding\nControl\nSecure coding principles shall be applied to software development.\n8.29\nSecurity testing in development\nand acceptance\nControl",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 23,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 60,
+      "clauses": [
+        "8.23",
+        "8.24",
+        "8.25",
+        "8.26",
+        "8.27",
+        "8.28",
+        "8.29"
+      ]
+    }
+  },
+  {
+    "text": "activities.\n8.28\nSecure coding\nControl\nSecure coding principles shall be applied to software development.\n8.29\nSecurity testing in development\nand acceptance\nControl\nSecurity testing processes shall be defined and implemented in the\ndevelopment life cycle.\n8.30\nOutsourced development\nControl\nThe organization shall direct, monitor and review the activities related\nto outsourced system development.\n8.31\nSeparation of development, test\nand production environments\nControl\nDevelopment, testing and production environments shall be separated\nand secured.\n8.32\nChange management\nControl\nChanges to information processing facilities and information systems\nshall be subject to change management procedures.\n8.33\nTest information\nControl\nTest information shall be appropriately selected, protected and managed.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 23,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 61,
+      "clauses": [
+        "8.28",
+        "8.29",
+        "8.30",
+        "8.31",
+        "8.32",
+        "8.33"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\n8.34\nProtection of information systems during audit testing\nControl\nAudit tests and other assurance activities involving assessment of operational systems shall be planned and agreed between the tester and\nappropriate management.",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 24,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 62,
+      "clauses": [
+        "8.34"
+      ]
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\nBibliography\n[1]\nISO/IEC 27002:2022, Information security, cybersecurity and privacy protection — Information\nsecurity controls\n[2]\nISO/IEC 27003, Information technology — Security techniques — Information security management\nsystems — Guidance\n[3]\nISO/IEC 27004, Information technology — Security techniques — Information security management\n— Monitoring, measurement, analysis and evaluation\n[4]\nISO/IEC 27005, Information security, cybersecurity and privacy protection — Guidance on\nmanaging information security risks\n[5]\nISO 31000:2018, Risk management — Guidelines",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 25,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 63
+    }
+  },
+  {
+    "text": "ISO/IEC 27001:2022(E)\nICS 03.100.70; 35.030\nPrice based on 19 pages",
+    "metadata": {
+      "source": "data/raw_pdfs/iso27001.pdf",
+      "page": 26,
+      "is_toc": false,
+      "is_cover": false,
+      "chunk_id": 64
+    }
+  }
+]
